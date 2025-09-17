@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ismael Jiménez Ramos | Marketing Digital & Growth</title>
+  <meta name="description" content="Ismael Jiménez Ramos — Performance marketer y media buyer. Portfolio tipo CV: social ads, SEO/SEM, diseño web y analítica. Casos, métricas y contacto." />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ismael Jiménez Ramos | Marketing Digital & Growth" />
+  <meta property="og:description" content="Resultados medibles, funnels, creatividades y growth." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tudominio.com" />
+  <meta property="og:image" content="https://tudominio.com/preview.jpg" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ismael Jiménez Ramos",
+    "jobTitle": "Marketing Digital & Media Buyer",
+    "url": "https://tudominio.com",
+    "email": "mailto:ismael.estrategico@gmail.com",
+    "sameAs": ["https://www.linkedin.com/in/ismael-jimenez-ramos-007284374"]
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg: #0b1220; --bg-soft: #0f172a; --card: #111827;
+      --muted: #a3b1c6; --text: #e5f0ff; --brand: #38bdf8; --brand-2: #22d3ee;
+      --ring: #60a5fa; --radius: 16px; --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --maxw: 1100px;
+      --step--1: clamp(0.85rem, 0.83rem + 0.2vw, 0.95rem);
+      --step-0: clamp(1rem, 0.95rem + 0.6vw, 1.125rem);
+      --step-1: clamp(1.125rem, 1.05rem + 1.0vw, 1.35rem);
+      --step-2: clamp(1.35rem, 1.2rem + 1.6vw, 1.8rem);
+      --step-3: clamp(1.8rem, 1.5rem + 2.2vw, 2.6rem);
+    }
+
+    /* ===== MODO CLARO (al alternar contraste) ===== */
+    body.light-mode{
+      --bg: #f5fbff;
+      --bg-soft: #eaf2fb;
+      --card: #ffffff;
+      --text: #0b1220;
+      --muted: #3b4a5f;
+      background: linear-gradient(120deg, #f5fbff 0%, #eaf2fb 100%);
+    }
+
+    /* Fuerza texto blanco en elementos con fondos azules/oscuros al activar el modo claro */
+    body.light-mode .tag,
+    body.light-mode .chip,
+    body.light-mode .stat,
+    body.light-mode .kpi b,
+    body.light-mode .kpi small,
+    body.light-mode .quote,
+    body.light-mode .case .inner h3,
+    body.light-mode .case .inner p{
+      color: #ffffff !important;
+    }
+    /* Si algún enlace queda sobre superficies azules, también en blanco */
+    body.light-mode .tag a,
+    body.light-mode .chip a,
+    body.light-mode .stat a,
+    body.light-mode .quote a,
+    body.light-mode .case .inner a{
+      color: #ffffff !important;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0; font: var(--step-0)/1.6 ui-sans-serif,-apple-system,Segoe UI,Roboto,Inter,system-ui,Arial;
+      color:var(--text); background:linear-gradient(120deg,#0b1220 0%,#0e1628 100%)}
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    img{max-inline-size:100%; block-size:auto; display:block}
+    .container{max-width:var(--maxw); margin-inline:auto; padding: clamp(16px, 3vw, 28px)}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    :where(a,button,input,textarea){outline:none}
+    :where(a,button,input,textarea):focus-visible{box-shadow:0 0 0 3px rgba(96,165,250,.6); border-radius:12px}
+
+    header{position:sticky; top:0; backdrop-filter: blur(8px);
+      background: color-mix(in oklab, var(--bg) 70%, transparent); border-bottom:1px solid #1f2937; z-index:10;}
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:12px}
+    .brand{display:flex; align-items:center; gap:10px; font-weight:800; letter-spacing:.3px}
+    .logo{inline-size:34px; block-size:34px; border-radius:10px;
+      background: radial-gradient(circle at 30% 30%, var(--brand), var(--brand-2)); box-shadow: var(--shadow)}
+    .actions{display:flex; align-items:center; gap:10px}
+    .btn{display:inline-flex; gap:8px; align-items:center; justify-content:center; padding:10px 16px;
+      border-radius:12px; font-weight:700; background:linear-gradient(135deg, var(--brand), var(--brand-2)); color:#00121d; border:none; cursor:pointer}
+    .btn[href]{text-decoration:none}
+    .btn-ghost{background:transparent; border:1px solid #22405f; color:#9ecdf8}
+
+    .hamburger{display:none; background:transparent; border:1px solid #22405f; border-radius:10px; padding:8px}
+    .mobile-panel{display:none}
+    @media (max-width:860px){
+      .actions{display:none}
+      .hamburger{display:inline-flex}
+      .mobile-panel{display:none; padding:12px 0}
+      .mobile-panel.open{display:grid; gap:10px}
+      .mobile-panel a{display:block}
+    }
+
+    .hero{display:grid; gap:24px; grid-template-columns: 1.1fr .9fr; align-items:center;}
+    .hero h1{font-size: var(--step-3); line-height:1.1; margin:0}
+    .hero p{font-size: var(--step-0)}
+    .tag{display:inline-flex; gap:8px; align-items:center; background:#0b2135; color:#8bd6ff; border:1px solid #13324e; padding:6px 10px; border-radius:12px; font-weight:600}
+    .kpis{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px; margin-top:16px}
+    .kpi{background:#0c1a2c; border:1px solid #1b2a3f; border-radius: var(--radius); padding:16px}
+    .kpi b{display:block; font-size: var(--step-1)}
+    .kpi small{color:var(--muted)}
+    .cta-row{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+    .hero-photo{inline-size:min(480px, 100%); aspect-ratio: 4/5; border-radius: var(--radius); overflow:hidden; box-shadow: var(--shadow); border:1px solid #1f2d46; background:#0e1b2d}
+    .hero-photo img{inline-size:100%; block-size:100%; object-fit:cover}
+
+    section{margin-top: clamp(36px, 6vw, 64px)}
+    h2{font-size: var(--step-2); margin: 0 0 12px}
+    .subtitle{color:var(--muted); margin-top:6px; margin-bottom:18px}
+
+    .grid{display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:16px}
+    .card{background:#0d1a2c; border:1px solid #1b2a3f; border-radius: var(--radius); padding:18px}
+    .card h3{margin:0 0 8px; font-size: var(--step-1)}
+    .chip{display:inline-block; border:1px solid #22405f; padding:4px 8px; border-radius:999px; color:#9ecdf8; font-size:12px; margin:6px 6px 0 0}
+
+    .cases{display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap:16px}
+    .case{background:linear-gradient(150deg,#0c1a2b,#0b1626); border:1px solid #1d2b41; border-radius: var(--radius); overflow:hidden}
+    .case canvas{width:100%!important; height:200px!important; display:block; background:#0b2135; border-radius:12px; margin-bottom:12px}
+    .case .inner{padding:18px}
+    .stat{display:inline-flex; gap:8px; align-items:center; background:#0b2135; border:1px solid #143a5e; padding:6px 10px; border-radius:999px; margin-right:8px}
+
+    .skills{display:grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap:10px}
+    .skill{background:#0b2135; border:1px solid #173550; border-radius:12px; padding:10px; text-align:center; font-weight:600}
+
+    .testis{display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:16px}
+    .quote{background:#0e1c2e; border:1px solid #20324d; border-radius: var(--radius); padding:16px}
+    .quote footer{margin-top:10px; color:var(--muted); font-size: var(--step--1)}
+
+    form{display:grid; gap:10px; max-width:760px}
+    input, textarea{width:100%; background:#0b2135; border:1px solid #173550; border-radius:12px; padding:12px; color:#e5f0ff}
+    textarea{min-height:120px}
+
+    footer{padding:30px 0; color:#8aa6c7}
+    .footer-row{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+
+    @media (max-width: 980px){ .hero{grid-template-columns:1fr} .kpis{grid-template-columns: repeat(3, 1fr)} }
+    @media (max-width: 680px){ .kpis{grid-template-columns: 1fr 1fr} }
+    @media (max-width: 420px){ .kpis{grid-template-columns: 1fr} .btn{inline-size:100%} }
+
+    @media (prefers-reduced-motion: reduce){
+      *{animation:none!important; transition:none!important; scroll-behavior:auto!important}
+    }
+
+    /* Servicios y habilidades en blanco en modo claro (extra fuerte) */
+    body.light-mode .grid .card,
+    body.light-mode .grid .card *{
+      color:#ffffff !important; /* Servicios: títulos y textos */
+    }
+    body.light-mode .skills,
+    body.light-mode .skills *{
+      color:#ffffff !important; /* Habilidades: todos los items */
+    }
+    body.light-mode .grid .card a,
+    body.light-mode .skills a{
+      color:#ffffff !important; /* Enlaces dentro de estos bloques */
+    }
+
+    /* HERO en modo claro: azul oscuro */
+    body.light-mode .hero h1,
+    body.light-mode .hero .subtitle{
+      color:#0b1220 !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav" role="navigation" aria-label="Principal">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Ismael Jiménez Ramos — Marketing & Growth</span>
+      </div>
+
+      <!-- Desktop acciones -->
+      <nav class="actions" aria-label="Acciones">
+        <!-- Enlace al CV centralizado -->
+        <a class="btn" data-cv href="https://drive.google.com/file/d/1GgweRqUplFF7E0KwRJBgRZ-2deuNbMbW/view?usp=drive_link" target="_blank" rel="noopener noreferrer" aria-label="Descargar CV en Google Drive">⬇ Descargar CV</a>
+        <a class="btn btn-ghost" href="mailto:ismael.estrategico@gmail.com">Contactar por email</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/ismael-jimenez-ramos-007284374" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </nav>
+
+      <!-- Mobile hamburger -->
+      <button class="hamburger" aria-expanded="false" aria-controls="mobile-panel" onclick="toggleMenu(this)">
+        <span class="sr-only">Abrir menú</span> ☰
+      </button>
+    </div>
+
+    <!-- Mobile panel -->
+    <div id="mobile-panel" class="container mobile-panel" aria-label="Menú móvil">
+      <a class="btn" data-cv href="https://drive.google.com/file/d/1GgweRqUplFF7E0KwRJBgRZ-2deuNbMbW/view?usp=drive_link" target="_blank" rel="noopener noreferrer">⬇ Descargar CV</a>
+      <a class="btn btn-ghost" href="#proyectos">Ver casos</a>
+      <a class="btn btn-ghost" href="mailto:ismael.estrategico@gmail.com">Contactar por email</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/ismael-jimenez-ramos-007284374" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <span class="tag">🚀 Performance • Social Ads • Web</span>
+        <h1 id="hero-title">Impulso marcas con campañas medibles, contenido que convierte y páginas web ultra-rápidas.</h1>
+        <p class="subtitle">Combinación de estrategia, creatividad y datos para conseguir el objetivo que importa: <b>resultado de negocio</b>.</p>
+
+        <div class="kpis" aria-label="Métricas principales">
+          <div class="kpi"><b>+320%</b><small>Crecimiento en leads (6 meses)</small></div>
+          <div class="kpi"><b>-42%</b><small>CPA medio en Meta Ads</small></div>
+          <div class="kpi"><b>1,6s</b><small>Tiempo a Interactivo (web)</small></div>
+        </div>
+
+        <div class="cta-row" role="group" aria-label="Llamadas a la acción">
+          <a class="btn" data-cv href="https://drive.google.com/file/d/1GgweRqUplFF7E0KwRJBgRZ-2deuNbMbW/view?usp=drive_link" target="_blank" rel="noopener noreferrer">⬇ Descargar CV (PDF)</a>
+          <a class="btn btn-ghost" href="#proyectos">Ver casos</a>
+        </div>
+      </div>
+
+      <aside class="hero-photo" aria-label="Retrato profesional">
+        <!-- Tu foto -->
+        <img src="IMG/azulIntenso.jpg" alt="Foto profesional de Ismael Jiménez Ramos" loading="lazy" decoding="async" />
+      </aside>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section aria-labelledby="servicios">
+      <h2 id="servicios">Qué hago (y por qué me escogen)</h2>
+      <p class="subtitle">Ejecutar rápido, medir mejor y optimizar sin magia: <b>hipótesis → test → aprendizaje → escala</b>.</p>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Meta & TikTok Ads</h3>
+          <p>Conversiones con estructura escalable (TOF/MOF/BOF), testing de creatividades, exclusión de audiencias y eventos personalizados.</p>
+          <div>
+            <span class="chip">CAPI • GA4</span>
+            <span class="chip">CTR &gt; 2,5%</span>
+            <span class="chip">CPA ↓</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>SEO/SEM práctico</h3>
+          <p>Keyword research accionable, on-page limpio, enlaces que aportan y campañas de búsqueda con intención y QS alto.</p>
+          <div>
+            <span class="chip">QS ≥ 8/10</span>
+            <span class="chip">Intent match</span>
+            <span class="chip">Contenido EEAT</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Webs que convierten</h3>
+          <p>Landing pages con jerarquía visual, carga instantánea, copy claro y pruebas sociales. Implementación en HTML/CSS o WordPress.</p>
+          <div>
+            <span class="chip">LCP &lt; 2,5s</span>
+            <span class="chip">UX • A11y</span>
+            <span class="chip">CRO</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CASOS -->
+    <section id="proyectos" aria-labelledby="casos">
+      <h2 id="casos">Casos de éxito</h2>
+      <p class="subtitle">Una muestra breve y concreta. Más detalles bajo NDA.</p>
+
+      <div class="cases">
+        <article class="case">
+          <div class="inner">
+            <canvas id="chartVeriAuto"></canvas>
+            <h3>VeriAuto: inspección de vehículos</h3>
+            <p>Funnel de captación con instant forms y remarketing. Integración de CAPI, eventos custom y automatizaciones.</p>
+            <p>
+              <span class="stat">+185% leads</span>
+              <span class="stat">CPA −37%</span>
+              <span class="stat">ROAS 3,2</span>
+            </p>
+          </div>
+        </article>
+
+        <article class="case">
+          <div class="inner">
+            <canvas id="chartViralium"></canvas>
+            <h3>Viralium: social growth + web</h3>
+            <p>Rebranding, diseño de landing, contenidos UGC y parrilla de reels. Arquitectura de campañas por objetivo y testing de hooks.</p>
+            <p>
+              <span class="stat">+62% seguidores</span>
+              <span class="stat">CTR 3,1%</span>
+              <span class="stat">LCP 1,8s</span>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section aria-labelledby="skills-title">
+      <h2 id="skills-title">Habilidades y herramientas</h2>
+      <p class="subtitle">Stack listo para ejecutar campañas y producto digital extremo a extremo.</p>
+
+      <div class="skills" role="list">
+        <div class="skill" role="listitem">Meta Ads</div>
+        <div class="skill" role="listitem">TikTok Ads</div>
+        <div class="skill" role="listitem">Google Ads</div>
+        <div class="skill" role="listitem">GA4 • GTM</div>
+        <div class="skill" role="listitem">CRO</div>
+        <div class="skill" role="listitem">SEO</div>
+        <div class="skill" role="listitem">Copywriting</div>
+        <div class="skill" role="listitem">SQL</div>
+        <div class="skill" role="listitem">HTML/CSS</div>
+        <div class="skill" role="listitem">WordPress</div>
+        <div class="skill" role="listitem">Canva</div>
+        <div class="skill" role="listitem">Excel/Sheets</div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section aria-labelledby="testis">
+      <h2 id="testis">Recomendaciones</h2>
+      <div class="testis">
+        <blockquote class="quote">
+          <p>“Transformó nuestras campañas: menos coste, más clientes. Tiene criterio y ejecuta rápido.”</p>
+          <footer>— Cliente B2C Retail</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“Destaco su capacidad para simplificar funnels complejos y medir lo que importa.”</p>
+          <footer>— Agencia colaboradora</footer>
+        </blockquote>
+        <blockquote class="quote">
+          <p>“Entrega por encima de lo prometido. Gran combinación de creatividad y datos.”</p>
+          <footer>— Emprendedor SaaS</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contacto</h2>
+      <p class="subtitle">¿Te encaja mi perfil para prácticas? Escríbeme y coordinamos una entrevista.</p>
+
+      <form name="contact" method="post" data-netlify="true" onsubmit="handleSubmit(event)">
+        <input type="hidden" name="form-name" value="contact">
+        <label>Nombre
+          <input required name="nombre" placeholder="Tu nombre" />
+        </label>
+        <label>Email
+          <input required type="email" name="email" placeholder="tu@empresa.com" />
+        </label>
+        <label>Mensaje
+          <textarea required name="mensaje" placeholder="Cuéntame sobre el reto y objetivos…"></textarea>
+        </label>
+        <button class="btn" type="submit">Enviar</button>
+        <p id="form-status" role="status" aria-live="polite" style="display:none; color:#8bd6ff; margin:6px 2px"></p>
+      </form>
+
+      <p style="margin-top:10px">
+        Contacto directo: <a href="mailto:ismael.estrategico@gmail.com">ismael.estrategico@gmail.com</a> •
+        LinkedIn: <a href="https://www.linkedin.com/in/ismael-jimenez-ramos-007284374" target="_blank" rel="noopener noreferrer">@Ismael Jiménez Ramos</a>
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="container" role="contentinfo">
+    <div class="footer-row">
+      <div class="logo" aria-hidden="true"></div>
+      <span>© <span id="year"></span> Ismael Jiménez Ramos — Marketing & Growth</span>
+      <span aria-hidden="true">•</span>
+      <a href="#" onclick="toggleTheme(); return false;">Alternar contraste</a>
+      <span aria-hidden="true">•</span>
+      <a class="btn-ghost" data-cv href="https://drive.google.com/file/d/1GgweRqUplFF7E0KwRJBgRZ-2deuNbMbW/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Descargar CV</a>
+      <span aria-hidden="true">•</span>
+      <a href="mailto:ismael.estrategico@gmail.com">Email</a>
+      <span aria-hidden="true">•</span>
+      <a href="https://www.linkedin.com/in/ismael-jimenez-ramos-007284374" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </div>
+  </footer>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    // Año en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Gráfico VeriAuto
+    new Chart(document.getElementById('chartVeriAuto'), {
+      type: 'line',
+      data: {
+        labels: ['Mes 1','Mes 2','Mes 3','Mes 4','Mes 5','Mes 6'],
+        datasets: [{
+          label: 'Leads',
+          data: [20, 35, 50, 70, 95, 150],
+          borderColor: '#38bdf8',
+          backgroundColor: 'rgba(56,189,248,0.2)',
+          fill: true,
+          tension: 0.3
+        }]
+      },
+      options: {
+        plugins: { legend: { labels: { color:'#e5f0ff' } } },
+        scales: {
+          x: { ticks:{ color:'#a3b1c6' }, grid:{ color:'#1f2d46' } },
+          y: { ticks:{ color:'#a3b1c6' }, grid:{ color:'#1f2d46' } }
+        }
+      }
+    });
+
+    // Gráfico Viralium
+    new Chart(document.getElementById('chartViralium'), {
+      type: 'bar',
+      data: {
+        labels: ['Inicio','Mes 1','Mes 2','Mes 3','Mes 4'],
+        datasets: [{
+          label: 'Seguidores',
+          data: [1000, 1200, 1600, 2000, 2600],
+          backgroundColor: '#22d3ee'
+        }]
+      },
+      options: {
+        plugins: { legend: { labels: { color:'#e5f0ff' } } },
+        scales: {
+          x: { ticks:{ color:'#a3b1c6' }, grid:{ color:'#1f2d46' } },
+          y: { ticks:{ color:'#a3b1c6' }, grid:{ color:'#1f2d46' } }
+        }
+      }
+    });
+
+    // Form feedback
+    function handleSubmit(e){
+      e.preventDefault();
+      const status = document.getElementById('form-status');
+      status.style.display = 'block';
+      status.textContent = '¡Gracias! Mensaje preparado. Conecta Formspree/Netlify o usa mailto: para envío real.';
+    }
+
+    // Tema alto contraste: alterna clase en <body>
+    function toggleTheme(){
+      document.body.classList.toggle('light-mode');
+    }
+
+    // Menú móvil
+    function toggleMenu(btn){
+      const panel = document.getElementById('mobile-panel');
+      const open = panel.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    // Centralizar URL del CV (Drive) en todos los enlaces con data-cv
+    const CV_URL = "https://drive.google.com/file/d/1GgweRqUplFF7E0KwRJBgRZ-2deuNbMbW/view?usp=drive_link";
+    document.querySelectorAll('a[data-cv]').forEach(a => {
+      a.href = CV_URL;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+    });
+  </script>
+</body>
+</html>
